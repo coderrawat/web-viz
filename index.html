@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Web Viz</title>
+</head>
+<body>
+    <div id="chart.holder" class="dev">
+        <div id="header">
+            <h2>Web Viz</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore illum facilis deserunt expedita nulla. Sequi, quis rem nisi qui illo accusantium cum harum praesentium! Illo non aliquid explicabo nulla sit?</p>
+        </div>
+        <div id="chart-components">
+            <div id="main">
+                <svg id="chart" width="300" height="225">
+                    <text id="title" text-anchor="middle" x="150" y="20">
+                        A Dummy Chart
+                    </text>
+                    <text x="20" y="20" transform="rotate(-90, 20,20)"
+                        text-anchor="end" dy="0.71em">
+                        y axis label
+                    </text>
+                    <circle r="15", cx="100" cy="50"></circle>
+                    <line x1="20", y1="20" x2="20" y2="130"></line>
+                    <line x1="20", y1="130" x2="280" y2="130"></line>
+                    <rect x="240" y="5" width="55" height="30"></rect>
+                    <polygon points="210, 100, 230, 100, 220, 80"></polygon>
+                    <path d="M20 130L60 70L110 100L160 45"></path>
+                    <path d="M40 40
+                            A30 40
+                            0 0 1
+                            80 80
+                            A50 50 0 0 1 160 80
+                            A30 30 0 0 1 190 80
+                    "></path>
+                    <path d="M40 80
+                            A30 40 0 0 1 80 80
+                            A30 40 0 0 0 120 80
+                            A30 40 0 1 0 160 80
+                            A30 40 0 1 1 200 80
+                    "></path>
+                </svg>
+
+                <svg id="chart2">
+                </svg>
+            </div>
+            <div id="sidebar">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat officia explicabo est dignissimos velit culpa fugiat nemo eveniet quibusdam? Dolor totam illo autem molestias velit debitis doloribus quis similique pariatur? </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
